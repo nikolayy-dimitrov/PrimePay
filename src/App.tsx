@@ -7,7 +7,7 @@ function App() {
   const [ selectedPage, setSelectedPage ] = useState<SelectedPage>(SelectedPage.Home);
 
   return (
-    <div className="app bg-bgc">
+    <div className="app bg-white">
       <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
       <Home setSelectedPage={setSelectedPage} />
     </div>

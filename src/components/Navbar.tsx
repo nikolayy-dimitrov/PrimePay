@@ -11,7 +11,7 @@ type Props = {
 const Navbar = ({ selectedPage, setSelectedPage }: Props) => {
 
     return <nav>
-        <div className="flex items-center justify-between fixed top-0 z-30 w-full py-4 bg-bgc">
+        <div className="flex items-center justify-between fixed top-0 z-30 w-full py-4 bg-white">
             <div className="flex items-center justify-between mx-auto">
                 <div className="flex items-center justify-between gap-52 w-full">
                     <AnchorLink href="/home"><img alt="PrimePay Logo" src={Logo} className=""/></AnchorLink>

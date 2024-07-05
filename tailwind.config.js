@@ -12,6 +12,8 @@ module.exports = {
         "content": "#4E4E4E",
         "bgc": "#F5F5F5",
         "bgc-gray": "#F8F8F8",
+        "gray-txt": "#B5B5B5",
+        "gray-line": "#D8D8D8",
         },
       },
       fontFamily: {
