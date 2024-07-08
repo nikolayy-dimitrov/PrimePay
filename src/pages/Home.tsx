@@ -19,8 +19,8 @@ type Props = {
 
 const Home = ({setSelectedPage}: Props) => {
 
-    return <section id="home" className="gap-16 py-10 md:h-full md:pb-0 bg-white">
-        {/*hero section*/}
+    return <section id="home" className="gap-16 py-10 md:pb-0 bg-white">
+        {/* Hero section */}
         <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Home)}>
             <div className="mt-12 z-10">
                 <div className="z-20 absolute inset-0 flex justify-center items-center -mt-14">
@@ -44,7 +44,7 @@ const Home = ({setSelectedPage}: Props) => {
                 <div className="relative flex items-end justify-center h-screen">
                     <div className="absolute inset-0 flex justify-center items-center">
                         <img alt="home-page-hero-background" src={HeroBackground}
-                             className="w-11/12 h-screen max-md:hidden"/>
+                             className="w-11/12 max-md:hidden"/>
                         <img alt="money-icon" src={MoneyImg}
                              className="absolute size-52 left-[25%] bottom-[10%] max-md:hidden"/>
                         <img alt="money-icon" src={CardImg}
@@ -56,8 +56,8 @@ const Home = ({setSelectedPage}: Props) => {
                 </div>
             </div>
         </motion.div>
-        {/*2nd section*/}
-        <div className="flex items-center justify-center h-screen">
+        {/* 2nd section */}
+        <div className="flex items-center justify-center py-20 mt-72">
             <div className="absolute bg-bgc w-11/12 rounded-3xl md:h-5/6">
                 <div className="z-10 absolute left-[28%] top-[5%]">
                     <img alt="message-icon" src={MessageImg} className="max-md:hidden size-32"/>
@@ -86,8 +86,8 @@ const Home = ({setSelectedPage}: Props) => {
                 </div>
             </div>
         </div>
-        {/*3rd section*/}
-        <div>
+        {/* 3rd section */}
+        <div className="py-20 mt-60">
             <div className="flex flex-col items-center">
                 <div className="w-10/12 max-w-6xl mx-auto mb-16">
                     <div className="flex gap-8">
