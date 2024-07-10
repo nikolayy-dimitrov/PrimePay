@@ -18,7 +18,7 @@ type Props = {
 
 const StarRating = ({ count = 5 }) => (
     <div className="flex space-x-2">
-        {Array(count).fill().map((_, i) => <img key={i} alt="star" src={Star} />)}
+        {Array(count).fill(null).map((_, i) => <img key={i} alt="star" src={Star} />)}
     </div>
 );
 
