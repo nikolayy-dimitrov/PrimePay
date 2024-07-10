@@ -140,7 +140,7 @@ const Home = ({setSelectedPage}: Props) => {
             </div>
         </div>
         <div className="flex justify-center items-center">
-            <div className="rounded-full border-gray-line mt-4 w-10/12 border bg-gray-line"></div>
+            <div className="rounded-full border-gray-line w-10/12 border bg-gray-line"></div>
         </div>
     </section>
 }
