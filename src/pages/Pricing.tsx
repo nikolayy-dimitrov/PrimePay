@@ -16,18 +16,18 @@ const Pricing = ({setSelectedPage}: Props) => {
                     Our payment services
                     <h2 className="text-primary">worldwide</h2>
                 </h2>
-                <div className="md:flex items-center justify-between gap-8 mt-12 max-md:space-y-6">
-                {/*Pricing option #1*/}
-                    <div className="bg-[#F2F2F2] rounded-2xl p-8 basis-1/3">
-                        <div className="bg-[#FFC173] p-8 rounded-xl flex items-center justify-between gap-24">
+                <div className="md:flex items-stretch justify-between gap-8 mt-12 max-md:space-y-6">
+                    {/* Pricing option #1 */}
+                    <div className="bg-[#F2F2F2] rounded-2xl p-8 basis-1/3 flex flex-col">
+                        <div className="bg-[#FFC173] p-8 rounded-xl flex items-center justify-between gap-8">
                             <h3 className="font-bold font-Jost text-primary text-4xl">Basic</h3>
-                            <img alt="check" src={Check} />
+                            <img alt="check" src={Check}/>
                         </div>
                         <div className="flex items-center justify-between p-2 mt-2 font-Jost font-medium text-primary">
                             <h4 className="text-3xl">$10.00</h4>
                             <h6>Month</h6>
                         </div>
-                        <div className="bg-white rounded-xl">
+                        <div className="bg-white rounded-xl flex-grow">
                             <ul className="text-content font-OpenSans px-8 py-4 space-y-4">
                                 <li>Modern Design</li>
                                 <li>Easy to Customize</li>
@@ -38,18 +38,18 @@ const Pricing = ({setSelectedPage}: Props) => {
                         </div>
                         <div
                             className="rounded-full bg-[#D7D7D7] text-center p-6 mt-4
-                            font-Inter font-semibold text-primary
-                            hover:bg-primary hover:text-white hover:cursor-pointer
-                            ">
+                        font-Inter font-semibold text-primary
+                        hover:bg-primary hover:text-white hover:cursor-pointer
+                        ">
                             <h4>GET STARTED</h4>
                         </div>
                     </div>
-                    {/*Pricing option #2*/}
-                    <div className="bg-[#F2F2F2] rounded-2xl p-8 basis-1/3">
-                        <div className="bg-secondary p-8 rounded-xl flex items-center justify-between gap-24">
+                    {/* Pricing option #2 */}
+                    <div className="bg-[#F2F2F2] rounded-2xl p-8 basis-1/3 flex flex-col">
+                        <div className="bg-secondary p-8 rounded-xl flex items-center justify-between gap-8">
                             <h3 className="font-bold font-Jost text-white text-4xl">Standard</h3>
-                            <div>
-                                <img alt="check" src={Check} />
+                            <div className="flex flex-col items-center -space-y-3">
+                                <img alt="check" src={Check} className="text-black"/>
                                 <img alt="check" src={Check} />
                             </div>
                         </div>
@@ -57,7 +57,7 @@ const Pricing = ({setSelectedPage}: Props) => {
                             <h4 className="text-3xl">$19.00</h4>
                             <h6>Month</h6>
                         </div>
-                        <div className="bg-white rounded-xl">
+                        <div className="bg-white rounded-xl flex-grow">
                             <ul className="text-content font-OpenSans px-8 py-4 space-y-4">
                                 <li>Modern Design</li>
                                 <li>Easy to Customize</li>
@@ -68,17 +68,17 @@ const Pricing = ({setSelectedPage}: Props) => {
                         </div>
                         <div
                             className="rounded-full bg-[#D7D7D7] text-center p-6 mt-4
-                            font-Inter font-semibold text-primary
-                            hover:bg-primary hover:text-white hover:cursor-pointer
-                            ">
+                        font-Inter font-semibold text-primary
+                        hover:bg-primary hover:text-white hover:cursor-pointer
+                        ">
                             <h4>GET STARTED</h4>
                         </div>
                     </div>
-                    {/*Pricing option #3*/}
-                    <div className="bg-[#F2F2F2] rounded-2xl p-8 basis-1/3">
-                        <div className="bg-[#FFC173] p-8 rounded-xl flex items-center justify-between gap-24">
+                    {/* Pricing option #3 */}
+                    <div className="bg-[#F2F2F2] rounded-2xl p-8 basis-1/3 flex flex-col">
+                        <div className="bg-[#FFC173] p-8 rounded-xl flex items-center justify-between gap-8">
                             <h3 className="font-bold font-Jost text-primary text-4xl">Premium</h3>
-                            <div className="flex">
+                            <div className="flex flex-col items-center -space-y-5">
                                 <img alt="check" src={Check} />
                                 <img alt="check" src={Check} />
                                 <img alt="check" src={Check} />
@@ -88,7 +88,7 @@ const Pricing = ({setSelectedPage}: Props) => {
                             <h4 className="text-3xl">$35.00</h4>
                             <h6>Month</h6>
                         </div>
-                        <div className="bg-white rounded-xl">
+                        <div className="bg-white rounded-xl flex-grow">
                             <ul className="text-content font-OpenSans px-8 py-4 space-y-4">
                                 <li>Modern Design</li>
                                 <li>Easy to Customize</li>
@@ -99,13 +99,14 @@ const Pricing = ({setSelectedPage}: Props) => {
                         </div>
                         <div
                             className="rounded-full bg-[#D7D7D7] text-center p-6 mt-4
-                            font-Inter font-semibold text-primary
-                            hover:bg-primary hover:text-white hover:cursor-pointer
-                            ">
+                        font-Inter font-semibold text-primary
+                        hover:bg-primary hover:text-white hover:cursor-pointer
+                        ">
                             <h4>GET STARTED</h4>
                         </div>
                     </div>
                 </div>
+
             </div>
         </motion.div>
     </section>
