@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: (theme) => ({
+        "footer-bg": "url(./assets/Background_Footer.svg)"
+      }),
       colors: {
         "primary": "#231656",
         "secondary": "#625FFB",
