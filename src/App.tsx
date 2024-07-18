@@ -1,6 +1,6 @@
-import Navbar from "./components/Navbar.tsx";
-import {useState} from "react";
+import { useState } from "react";
 import {SelectedPage} from "./utils/types.ts";
+import Navbar from "./components/Navbar.tsx";
 import Home from "./pages/Home.tsx";
 import Features from "./pages/Features.tsx";
 import AboutUs from "./pages/AboutUs.tsx";
@@ -13,10 +13,12 @@ function App() {
   return (
     <div className="app bg-white">
         <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} />
-        <Home setSelectedPage={setSelectedPage} />
-        <AboutUs setSelectedPage={setSelectedPage} />
-        <Features setSelectedPage={setSelectedPage} />
-        <Pricing setSelectedPage={setSelectedPage} />
+        <div>
+                <Home setSelectedPage={setSelectedPage} />
+                <AboutUs setSelectedPage={setSelectedPage} />
+                <Features setSelectedPage={setSelectedPage} />
+                <Pricing setSelectedPage={setSelectedPage} />
+        </div>
         <Footer />
     </div>
   )
