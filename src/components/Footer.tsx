@@ -7,9 +7,10 @@ import YoutubeIcon from "../assets/Youtube.svg";
 
 const Footer = () => {
     return (
-        <footer id="footer" className="w-full mx-auto mt-32 bg-white">
-            <div className="w-11/12 mx-auto">
-                <div className="max-md:hidden w-11/12 mx-auto bg-footer-bg rounded-3xl p-14 flex justify-between items-center">
+        <footer id="footer" className="w-full mx-auto mt-32 bg-white relative">
+            <div className="w-11/12 mx-auto relative">
+                {/* Top div with background image */}
+                <div className="max-md:hidden w-11/12 mx-auto bg-footer-bg rounded-3xl p-14 flex justify-between items-center absolute top-0 left-0 right-0 -mt-24 z-10">
                     <h2 className="text-primary font-Jost font-semibold text-3xl">
                         Take control of your<br />
                         personal <span className="text-white">finances today</span>
@@ -29,7 +30,8 @@ const Footer = () => {
                     </form>
                 </div>
 
-                <div className="grid md:grid-cols-4 gap-8 py-16 bg-bgc rounded-3xl">
+                {/* Gray background div */}
+                <div className="grid md:grid-cols-5 grid-cols-4 gap-2 py-16 px-16 bg-bgc rounded-3xl pt-40 relative z-0">
                     <div>
                         <img alt="logo" src={Logo} className="h-10 mb-4"/>
                         <p className="text-content font-OpenSans text-sm mb-6">
@@ -45,6 +47,7 @@ const Footer = () => {
                             <a><img alt="Youtube" src={YoutubeIcon} className="w-6 h-6"/></a>
                         </div>
                     </div>
+                    <div className="ml-20 h-[90%] bg-[#C4C4C4] w-0.5 text-center max-md:hidden rounded-full"></div>
                     <div>
                         <h3 className="text-primary font-medium font-Jost text-lg mb-4">Menu</h3>
                         <ul className="space-y-2 text-content font-OpenSans">
@@ -73,7 +76,7 @@ const Footer = () => {
                         </p>
                         <p className="text-content mb-6">
                             +3255 456 789<br />
-                            mail@primpay.com
+                            mail@primepay.com
                         </p>
                         <button className="bg-secondary text-white font-Inter font-semibold py-3 px-8 rounded-full hover:bg-primary transition duration-200">
                             GET A QUOTE
