@@ -32,7 +32,7 @@ const Home = ({setSelectedPage}: Props) => {
                             <p className="font-OpenSans font-semibold">A Simple Yet Modern Solution To Showcase Your
                                 App</p>
                         </div>
-                        <div className="mt-10">
+                        <div className="mt-10 max-md:mb-32">
                             <AnchorLink
                                 className="text-bgc text-sm font-Inter font-semibold rounded-3xl bg-primary px-8 py-4 relative"
                                 onClick={() => setSelectedPage(SelectedPage.Home)}
@@ -50,7 +50,7 @@ const Home = ({setSelectedPage}: Props) => {
                         <img alt="money-icon" src={CardImg}
                              className="absolute size-36 right-[25%] bottom-[5%] max-md:hidden"/>
                     </div>
-                    <div className="z-20 -mb-96 ml-4 h-full flex items-center justify-center">
+                    <div className="md:z-20 max-md:pt-[175%] md:-mb-96 ml-4 h-full flex items-center justify-center">
                         <img alt="phone-app-image" src={PhoneImg} className="h-5/6 absolute"/>
                     </div>
                 </div>
@@ -87,11 +87,11 @@ const Home = ({setSelectedPage}: Props) => {
             </div>
         </div>
         {/* 3rd section */}
-        <div className="py-20 mt-60">
-            <div className="flex flex-col items-center">
+        <div className="py-20 mt-60 max-md:pt-64">
+            <div className="md:flex md:flex-col items-center">
                 <div className="w-10/12 max-w-6xl mx-auto mb-16">
-                    <div className="flex gap-8">
-                        <div className="flex-1 font-Jost font-semibold text-4xl">
+                    <div className="md:flex gap-8">
+                        <div className="md:flex-1 font-Jost font-semibold text-4xl">
                             <h2 className="text-gray-txt">Send and receive<h2 className="text-primary">payments
                                 <span className="text-gray-txt"> easily</span></h2></h2>
                             <p className="font-OpenSans font-normal text-xs text-balance mt-6">
@@ -101,7 +101,7 @@ const Home = ({setSelectedPage}: Props) => {
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br />
                                 sed do eiusmod tempor incididunt ut labore et dolore<br /> magna aliqua.</p>
                             <div className="border-gray-line mt-6 rounded-3xl w-1/2 border bg-gray-line"></div>
-                            <div className="flex items-center gap-4 mt-6">
+                            <div className="md:flex items-center gap-4 mt-6">
                                 <div
                                     className="shadow flex justify-center items-center border border-orange-300 bg-orange-300 rounded-full h-16 w-16">
                                     <img alt="play-icon" src={PlayIcon} className="size-5"/>
@@ -112,17 +112,17 @@ const Home = ({setSelectedPage}: Props) => {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex-1 flex justify-end">
+                        <div className="flex-1 flex justify-end max-md:hidden">
                             <img alt="background-image" src={BackgroundThird}
                                  className="rounded-[30px] w-4/5 h-auto"/>
                         </div>
                     </div>
                 </div>
-                <div className="z-20 ml-[28%] h-full flex items-end  justify-start">
+                <div className="z-20 ml-[28%] h-full flex items-end max-md:hidden justify-start">
                     <img alt="example-mobile-image" src={MobileImgTwo} className="-mb-72 absolute h-5/6"/>
                 </div>
-                <div className="p-16 w-10/12 bg-bgc rounded-3xl h-40 mb-20 flex items-center">
-                    <div className="grid grid-cols-3 w-2/3">
+                <div className="p-16 w-10/12 bg-bgc rounded-3xl md:h-40 mb-20 mx-auto flex items-center">
+                    <div className="grid md:grid-cols-3 grid-cols-1 max-md:space-y-2 w-2/3">
                         <div className="text-left">
                             <h4 className="font-Jost font-semibold text-xl">12.000 +</h4>
                             <p className="font-OpenSans text-xs">Downloaded</p>

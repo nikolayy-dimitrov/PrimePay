@@ -31,7 +31,7 @@ const Footer = () => {
                 </div>
 
                 {/* Gray background div */}
-                <div className="grid md:grid-cols-5 grid-cols-4 gap-2 py-16 px-16 bg-bgc rounded-3xl pt-40 relative z-0">
+                <div className="grid md:grid-cols-5 grid-cols-1 max-md:space-y-16 gap-2 py-16 px-16 bg-bgc rounded-3xl md:pt-40 pt-24 relative z-0">
                     <div>
                         <img alt="logo" src={Logo} className="h-10 mb-4"/>
                         <p className="text-content font-OpenSans text-sm mb-6">
