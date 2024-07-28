@@ -19,7 +19,7 @@ type Props = {
 
 const Home = ({setSelectedPage}: Props) => {
 
-    return <section id="home" className="gap-16 py-10 md:pb-0 bg-white">
+    return <section id="home" className="gap-16 py-8 md:pb-0 bg-white">
         {/* Hero section */}
         <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.Home)}>
             <div className="mt-12 z-10">
@@ -101,7 +101,7 @@ const Home = ({setSelectedPage}: Props) => {
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br />
                                 sed do eiusmod tempor incididunt ut labore et dolore<br /> magna aliqua.</p>
                             <div className="border-gray-line mt-6 rounded-3xl w-1/2 border bg-gray-line"></div>
-                            <div className="md:flex items-center gap-4 mt-6">
+                            <div className="md:flex items-center gap-4 mt-6 max-md:hidden">
                                 <div
                                     className="shadow flex justify-center items-center border border-orange-300 bg-orange-300 rounded-full h-16 w-16">
                                     <img alt="play-icon" src={PlayIcon} className="size-5"/>
@@ -121,19 +121,19 @@ const Home = ({setSelectedPage}: Props) => {
                 <div className="z-20 ml-[28%] h-full flex items-end max-md:hidden justify-start">
                     <img alt="example-mobile-image" src={MobileImgTwo} className="-mb-72 absolute h-5/6"/>
                 </div>
-                <div className="p-16 w-10/12 bg-bgc rounded-3xl md:h-40 mb-20 mx-auto flex items-center">
-                    <div className="grid md:grid-cols-3 grid-cols-1 max-md:space-y-2 w-2/3">
-                        <div className="text-left">
-                            <h4 className="font-Jost font-semibold text-xl">12.000 +</h4>
-                            <p className="font-OpenSans text-xs">Downloaded</p>
+                <div className="md:p-16 p-8 w-10/12 bg-bgc rounded-3xl md:h-40 md:mb-20 mb-8 mx-auto flex items-center justify-center">
+                    <div className="grid md:grid-cols-3 grid-cols-1 max-md:space-y-4 w-2/3">
+                        <div className="text-left max-md:text-center">
+                            <h4 className="font-Jost font-semibold text-xl max-md:text-3xl">12.000 +</h4>
+                            <p className="font-OpenSans md:text-xs">Downloaded</p>
                         </div>
-                        <div className="text-left">
-                            <h4 className="font-Jost font-semibold text-xl">$10 M</h4>
-                            <p className="font-OpenSans text-xs">Transactions</p>
+                        <div className="text-left max-md:text-center">
+                            <h4 className="font-Jost font-semibold text-xl max-md:text-3xl">$10 M</h4>
+                            <p className="font-OpenSans md:text-xs">Transactions</p>
                         </div>
-                        <div className="text-left">
-                            <h4 className="font-Jost font-semibold text-xl">1.000 +</h4>
-                            <p className="font-OpenSans text-xs">Feedback</p>
+                        <div className="text-left max-md:text-center">
+                            <h4 className="font-Jost font-semibold text-xl max-md:text-3xl">1.000 +</h4>
+                            <p className="font-OpenSans md:text-xs">Feedback</p>
                         </div>
                     </div>
                 </div>
